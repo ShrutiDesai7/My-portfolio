@@ -1,0 +1,181 @@
+/* Custom Styles for Shruti Desai Portfolio - Dark Theme */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #181c2f 0%, #232946 100%);
+  min-height: 100vh;
+  color: #eaeaea;
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(90deg, #232946 60%, #0d6efd 100%) !important;
+}
+
+.btn-gradient-primary {
+  background: linear-gradient(90deg, #0d6efd 60%, #232946 100%);
+  color: #fff;
+  border: none;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.btn-gradient-primary:hover, .btn-gradient-primary:focus {
+  box-shadow: 0 4px 16px rgba(13,110,253,0.2);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #0d6efd 60%, #6f42c1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #232946;
+  box-shadow: 0 4px 24px rgba(13,110,253,0.15);
+  background: #232946;
+  transition: transform 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 32px;
+  color: #0d6efd;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.05);
+}
+
+.navbar, .navbar .container, .navbar .navbar-collapse {
+  background: linear-gradient(90deg, #232946 60%, #0d6efd 100%) !important;
+}
+
+.nav-link.active, .nav-link:focus {
+  color: #fff !important;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+}
+
+.nav-link {
+  color: #eaeaea !important;
+  margin-right: 8px;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+.nav-link:hover {
+  color: #ffe484 !important;
+}
+
+.card-title {
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  background: #232946;
+  color: #eaeaea;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(13,110,253,0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+
+footer {
+  font-size: 1rem;
+  background: #181c2f;
+  color: #0d6efd !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #232946 0%, #0d6efd 100%);
+  color: #fff;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .container {
+  z-index: 2;
+  position: relative;
+}
+
+.animate-pop {
+  animation: popIn 0.8s cubic-bezier(.68,-0.55,.27,1.55) 0.1s both;
+}
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.7) translateY(40px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.section-fadein {
+  animation: fadeIn 1.2s ease 0.1s both;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.list-group-item {
+  background: #232946 !important;
+  color: #eaeaea;
+  border: none;
+}
+
+.badge {
+  background: linear-gradient(90deg, #0d6efd 60%, #6f42c1 100%);
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.btn-outline-primary, .btn-outline-dark {
+  border-width: 2px;
+}
+
+.btn-outline-primary {
+  color: #0d6efd;
+  border-color: #0d6efd;
+  background: transparent;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background: #0d6efd;
+  color: #fff;
+}
+
+.btn-outline-dark {
+  color: #eaeaea;
+  border-color: #eaeaea;
+  background: transparent;
+}
+.btn-outline-dark:hover, .btn-outline-dark:focus {
+  background: #eaeaea;
+  color: #232946;
+}
+
+@media (max-width: 767px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  .section-title {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
